@@ -40,7 +40,7 @@ Panduan ini dibuat untuk membantu tim developer dalam berkolaborasi menggunakan 
         Branch utama yang mencerminkan kode production atau versi yang sudah stable. Semua fitur yang rilis ditandai dari branch ini (misalnya dengan tag v.1.0.).
         ⚠️ Developer tidak diperbolehkan melakukan development langsung di branch main.
 
-        ▪️develop\*
+        ▪️develop/\*
         Branch untuk integrasi seluruh fitur baru sebelum di rilis ke production. Semua fitur dan bugfix digabung kesini terlebih dahulu melalui Pull Request. Bisa dianggap sebagai versi staging sebelum masuk ke branch main.
 
         ▪️feat/\*
@@ -62,7 +62,7 @@ Panduan ini dibuat untuk membantu tim developer dalam berkolaborasi menggunakan 
 🌱 Alur Kerja Git (Git Flow)
 
         • Checkout ke branch develop
-        ➡️ git checkout develop
+                ➡️ git checkout develop
 
         • Buat branch baru based on branch develop:
 
@@ -97,7 +97,7 @@ Panduan ini dibuat untuk membantu tim developer dalam berkolaborasi menggunakan 
         • Pull Request akan di review dan approve oleh Project Manager (PM)
         • Apabila:
 
-                ❌ Pull Request belum mendapatkan approval oleh PM dan butuh perbaikan, lakukan perbaikan tersebut di local. Setelah perbaikan selesai, lakukan commit dan push branch ke remote
+                ❌ Pull Request belum mendapatkan approval oleh PM dan butuh perbaikan, lakukan perbaikan tersebut di local. Setelah perbaikan selesai, lakukan ulang commit dan push branch ke remote. ⚠️Tidak perlu melakukan `Compare and Pull Request` lagi!
 
                 ✅ Pull Request telah mendapatkan approval oleh PM, lakukan `Merge Pull Request`
 
@@ -147,21 +147,21 @@ Conventional Commit adalah sebuah standar penulisan pesan commit (commit message
 
 🔀 Pull Request (PR) Rules
 
-• Judul PR harus jelas, contoh: feat(auth): implement login endpoint
-• Deskripsikan perubahan dan tujuan PR
-• Tambahkan screenshot (jika relevan)
-• Assign minimal 1 reviewer
-• Hindari PR besar; jika perlu, pecah menjadi beberapa PR kecil
+        • Judul PR harus jelas, contoh: feat(auth): implement login endpoint
+        • Deskripsikan perubahan dan tujuan PR
+        • Tambahkan screenshot (jika relevan)
+        • Assign minimal 1 reviewer
+        • Hindari PR besar; jika perlu, pecah menjadi beberapa PR kecil
 
 ⛔ Hal yang Harus Dihindari
 
-• Push langsung ke branch main maupun branch develop
-• Pesan commit tanpa deskripsi jelas
-• PR besar tanpa penjelasan
-• Menghapus branch orang lain tanpa izin
+        • Push langsung ke branch main maupun branch develop
+        • Pesan commit tanpa deskripsi jelas
+        • PR besar tanpa penjelasan
+        • Menghapus branch orang lain tanpa izin
 
 ✅ Checklist Sebelum Merge
-• Apakah sudah lulus testing?
-• Apakah telah di review oleh rekan satu tim?
-• Apakah sudah tidak ada confilcit pada saat melakukan merge?
-• Apakah sudah melakukan update dokumentasi (jika perlu)?
+        • Apakah sudah lulus testing?
+        • Apakah telah di review oleh rekan satu tim?
+        • Apakah sudah tidak ada confilcit pada saat melakukan merge?
+        • Apakah sudah melakukan update dokumentasi (jika perlu)?
