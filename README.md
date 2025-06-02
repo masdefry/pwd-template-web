@@ -161,6 +161,7 @@ Conventional Commit adalah sebuah standar penulisan pesan commit (commit message
         • Menghapus branch orang lain tanpa izin
 
 ✅ Checklist Sebelum Merge
+
         • Apakah sudah lulus testing?
         • Apakah telah di review oleh rekan satu tim?
         • Apakah sudah tidak ada confilcit pada saat melakukan merge?
